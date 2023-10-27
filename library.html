@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="library.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="item header">
+            <div class="header-section">
+                <img src="img-assets/134216_menu_lines_hamburger_icon.svg" alt="menu" id="menu"/>
+                <h1 id="project-name">Library</h1>
+                <button id="add-btn">Add</button>
+            </div>
+        </header>
+        <dialog data-modal class="modal">
+            <form class="dialog-form" action="/anone.html">
+                <img src="img-assets/1-scary-horror-stories-book-csa-images.jpg" alt="book">
+                <div class="inps">
+                    <label for="title">Title: </label>
+                    <input type="text" id="title" name="title"  placeholder="eg. Atomic habit" required>
+                </div>
+                <div  class="inps">
+                    <label for="author">Author: </label>
+                    <input type="text" id="author" name="author" placeholder="eg. James Clear" required>
+                </div>
+                <div  class="inps">
+                    <label for="pages">Pages: </label>
+                    <input type="number" id="pages" name="pages" min=5 placeholder="eg. 320" required>
+                </div>
+                <div class="inps">
+                    <label for="status">Reading Status:</label>
+                    <select id="status" required>
+                        <option value="No Status">No Status</option>
+                        <option value="Done">Done</option>
+                        <option value="On Reading">On Reading</option>
+                        <option value="Not Read">Not Read</option>
+                    </select>
+                </div>
+
+                <div class="mani-btns">
+                    <button type="submit" formmethod="dialog" id="closeBtn">Cancel</button>
+                    <button id="clear" formmethod="dialog">Clear</button>
+                    <button type="submit" formmethod="dialog" id="add-to">Add</button>
+                </div>
+            </form>
+        </dialog>
+        <main class="item main">  
+            <div class="card items">
+                <h1 id="book-name">Library App</h1>
+                <div class="read-check status-check">Done</div>
+                <div class="page-author">
+                    <p id="page">320</p>
+                    <i style="color:white;"><p id="author-name">Zekaryas</p></i>
+                </div>
+                <div class="book-mani">
+                    <img src="img-assets/book1.png" alt="book2" class="book">
+                    <img src="img-assets/9004852_trash_delete_bin_remove_icon.png" alt="delete" class="deletion">
+                </div>
+            </div>
+        </main> 
+        <article class="item info-article">
+            <button class="reset">Reset</button>
+            <div class="book-analytics">
+                <div class="tot">
+                    <h2>Total Listed Books</h2><br>
+                    <span id="total">1</span>
+                </div>
+                <div class="readd">
+                    <h2>Completed</h2>
+                </div>
+                <div class="reading">
+                    <h2>Currently Reading</h2>
+                </div>
+                <div class="not-read">
+                    <h2>Not Read At All</h2>
+                </div>
+                <div class="credit">
+                    <p><i>By: Zekaryas Mekuaninit</i></p>
+                </div>
+            </div>
+        </article>
+        <article class="item info-article1">
+            <div id="colapse">X</div>
+            <button class="reset">Reset</button>
+            <div class="book-analytics">
+                <div class="tot">
+                    <h2>Total Listed Books</h2><br>
+                    <span id="nums-tot">1</span>
+                </div>
+                <div class="readd">
+                    <h2>Completed</h2>
+                </div>
+                <div class="reading">
+                    <h2>Currently Reading</h2>
+                </div>
+                <div class="not-read">
+                    <h2>Not Read At All</h2>
+                </div>
+                <div class="credit">
+                    <p><i>By: Zekaryas Mekuaninit</i></p>
+                </div>
+            </div>
+        </article>
+        <div class="pop">
+            
+        </div>
+
+        <footer class="item footer">
+            <div class="source">
+                <div>Look for Code?</div>
+                <a href="https://github.com/zakymaky8/library"><img src="img-assets/srcd.png" alt="source code"></a>
+            </div>
+            <div class="github">
+                <div>Github</div>
+                <a href="https://github.com/zakymaky8"><img src="img-assets/795593.png" alt="git-hub"></a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>

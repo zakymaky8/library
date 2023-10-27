@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 80px 2fr 60px;
+    grid-template-areas: 'header header'
+                         'main side'
+                         'footer footer';
+    background: linear-gradient(270deg,rgb(52, 0, 16),rgb(84, 20, 20));
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: header;
+    background-color:rgb(27, 6, 96);
+}
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#project-name {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-shadow: 3px 4px 7px greenyellow;
+    -webkit-text-stroke: 1px rgb(20, 206, 181);
+}
+#add-btn {
+    width: 10vw;
+    height: 100%;
+    color: white;
+    font-size: 100%;
+    background-color: rgb(4, 41, 39);
+    border-radius: 50%;
+}
+#add-btn:hover {
+    cursor: pointer;
+    transform: scale(1,1.5);
+    background-color: rgb(16, 123, 16);
+    transition: all 0.2s linear;
+}
+
+.footer {
+    background-color: rgb(5, 72, 81);
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-template-rows: repeat(3, 194px);
+    gap: 1em;
+    padding: 1em;
+    height: 100%;
+
+}
+.info-article {
+    grid-area: side;
+    background-color: rgb(12, 37, 32);
+
+}
+img[alt='menu'] {
+    display: none;
+}
+
+.modal {
+    width: 235px;
+    height: 50%;
+    position: absolute;
+    opacity: 0;
+    top: 55%;
+    left: 50%;
+    transform: scale(0.5,0.5);
+    z-index: 2;
+    border-top: 8px solid rgb(101, 15, 92);
+    border-bottom: 8px solid rgb(101, 15, 92);
+    background: rgb(62, 78, 75);
+    box-shadow: 3px 3px 9px 1px rgb(243, 87, 9);
+}
+.modal::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+.dialog-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 14px;
+}
+
+.mani-btns {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+}
+.mani-btns button {
+    flex: 1;
+    height: 25px;
+}
+.mani-btns button:nth-child(1) {
+    background-color: red;
+}
+.mani-btns button:nth-child(2) {
+    background-color: brown;
+}
+.mani-btns button:nth-child(3) {
+    background-color: green;
+}
+input[type='text'], input[type='number'] , #status{
+    background: none;
+    border-bottom: 2px solid rgb(22, 14, 127);
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    padding-left: 5px;
+    color: white;
+    outline: none;
+    font-size: 12px;
+}
+.inps {
+    padding-left: 20px;
+}
+img[alt='book'] {
+    width: 50%;
+    height: 22%;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(92, 17, 76);
+    border: 5px groove rgb(0, 0, 0);
+    border-top: 10px groove rgb(24, 132, 10);
+    border-bottom: 5px groove red;
+    border-radius: 17px;
+    font-size: 10px;
+    word-spacing: -3px;
+    text-align: center;
+    height: 200px;
+}
+
+.book-mani {
+    display: flex;
+    height: 15%;
+    justify-content: space-around;
+    background-color: rgb(160, 134, 134);
+    border-radius: 30px;
+    width: 100%;
+}
+.page-author {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -15px;
+    padding-left: 10px;
+    width: 100%;
+}
+#book-name {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255)
+}
+.read-check {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 6px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+#status {
+    background: rgb(0, 0, 0, 0.8);
+    width: 80%;
+}
+.book-analytics {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-aroung;
+    gap: 40px;
+    color: rgb(168, 30, 154);
+    padding: 20px;
+}
+.readd, .reading, .not-read, .tot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#total,#nums-tot {
+    font-size: 30px;
+
+}
+.tot {
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background: #000;
+}
+
+.readd {
+    background: #1b500a;
+    color: rgb(0, 255, 0);
+}
+.reading {
+    background: #6a550a;
+    color: yellow; 
+}
+.not-read {
+    background: #3f090d;
+    color: rgb(255, 0, 0);
+}
+.readd,.reading,.not-read {
+    padding: 12px;
+    border-radius: 15px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.source,.github {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-left: 15px;
+    font-weight: 1000;
+    font-size: 13px;
+}
+.info-article1 {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    transform: translate(-100%,0%);
+    background: rgb(12, 37, 32, 1);
+    z-index: 10;
+    height: 100%;
+    width: 97.4vw;
+}
+#colapse {
+    color: rgb(255, 0, 0);
+    background: #480b0b;
+    padding: 5px;
+    font-weight: 1000;
+    border-radius: 50%;
+    text-align: center;
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 5px;
+    width: 50px;
+}
+.reset {
+    color:rgb(21, 6, 88);
+    font-size: 16px;
+    padding: 5px;
+    box-shadow: wheat 2px 2px 1px 1px;
+    cursor: pointer;
+    background: rgb(0, 255, 0);
+    width: fit-content;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-weight: 1000;
+}
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 4fr 0px;
+    }
+    .info-article {
+        display: none;
+    }
+    #project-name {
+        font-size: 7vw;
+    }
+    #add-btn {
+        font-size: 4vw;
+    }
+    img[alt='menu'] {
+        display: block;
+        width: 8%;
+    }
+}
