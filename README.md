@@ -43,4 +43,4 @@ Please make sure to update tests as appropriate.
 This software utilizes the resources like icons fron [iconfinder](https://www.iconfinder.com/) and direct copy of code from [blog](https://blog.webdevsimplified.com/) for allowing dialog form closed by clicking non-regional spaces.
 
 ## Contact
-[email](zakydev8@gmail.com)
+Email: zakydev8@gmail.com
