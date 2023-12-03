@@ -14,13 +14,14 @@ let readCheck = document.querySelector('.read-check');
 let page = document.querySelector('#page');
 let author = document.querySelector('#author-name');
 
-function Book(title, author, pages, status) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;  
-    this.status = status;
+class Book {
+    constructor(title, author, pages, status) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;  
+        this.status = status;
+    }
 }
-
 // function for side slider menu
 
 function revealConceal() {
