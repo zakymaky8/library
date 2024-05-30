@@ -10,13 +10,13 @@
 |[Credits](#Credits)          |
 |[Contact](#Contact)          |
 ## Description
--This is simple Library App that is guided by ***The Odin Project*** through course [project](https://www.theodinproject.com/lessons/node-path-javascript-library) requirment
-- The app is built using only HTML, CSS, JavaScript.
+- This is simple Library App that is guided by ***The Odin Project*** through course [project](https://www.theodinproject.com/lessons/node-path-javascript-library) requirment
+- The app is built using only HTML, CSS and JavaScript.
 - It has a simple UI with options to add books and authors.
--In this app you will not find any storage right now. It just requires you to fill some data
-in the ***form*** and the program uses that data to show you in the display in the form of card.
--The app also have delete button to manualy delete the book card
--The app have **menu** at the top left corner that can only be uncovered when the side info section get no sufficient space.
+- In this app you will not find any storage right now. It just requires you to fill some data
+in the **form** and the program uses that data to show you in the display in the form of card.
+- The app also have delete button to manualy delete the book card
+- The app have **menu** at the top left corner that can only be uncovered when the side info section gets no sufficient space.
 - You can also see total number of books in the side info section
 - There are no databases or server used here as it's a static web page.
 - This project was made for learning purposes.
@@ -43,6 +43,6 @@ Please make sure to update tests as appropriate.
 This software utilizes the resources like icons fron [iconfinder](https://www.iconfinder.com/) and direct copy of code from [blog](https://blog.webdevsimplified.com/) for allowing dialog form closed by clicking non-regional spaces.
 
 ## Contact
-Email: zakydev8@gmail.com
+Email: [here](mailto:zakydev8@gmail.com)
 ## Live Demo
 [here](https://zakymaky8.github.io/library/)
