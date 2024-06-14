@@ -15,15 +15,15 @@
 - It has a simple UI with options to add books and authors.
 - In this app you will not find any storage right now. It just requires you to fill some data
 in the **form** and the program uses that data to show you in the display in the form of card.
-- The app also have delete button to manualy delete the book card
-- The app have **menu** at the top left corner that can only be uncovered when the side info section gets no sufficient space.
+- The app also has delete button to manualy delete the book card
+- The app has **menu** at the top left corner that can only be uncovered when the side info section gets no sufficient space.
 - You can also see total number of books in the side info section
-- There are no databases or server used here as it's a static web page.
+- There is no database or server used here as it's a static web page.
 - This project was made for learning purposes.
 ## Usage
 1. Open index.html file on your browser
 2. Start adding books and authors
-3. See them displayed below
+3. See them displayed.
 4. Click on Delete Button next to each Book Card to remove it from Display
 5. Check Total Number of Books at the side info section
 6. Enjoy!
