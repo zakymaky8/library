@@ -1,5 +1,5 @@
 # library
-## Simple Library App
+## Simple Library App built using basic front end stacks
 ## Table of contents
 |Contents                     |
 |:---------------------------:|
